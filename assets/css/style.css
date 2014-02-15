@@ -1,0 +1,52 @@
+/**
+ * 	General Style
+ */
+body
+{
+	background-color:rgb(153,255,102);
+	background-image:  url("../img/dots_final.png");
+	background-size: 60px 60px;
+	color:rgb(51,51,51);
+}
+.wrap
+{
+	background-color:rgba(255,255,204,0.9);
+	border-radius: 4px;
+	border: 1px solid rgb(192,0,0);
+}
+a,a:focus,a:active,a:visited,a:hover
+{
+	color: rgb(255,160,21);
+}
+/*
+ * Remove ugly Pageheaderborder
+ */
+.page-header
+{
+	border-bottom:1px solid rgb(192,0,0);
+}
+/*
+ * Navigation
+ */
+.navbar
+{
+	background-color:rgba(255,255,204,1);
+	margin-top:20px;
+	border:1px solid rgb(192,0,0);
+	border-radius: 4px;
+}
+.navbar .active a
+{
+	background-color:rgba(255,160,21,0.5) !important;
+}
+/*
+ * footer
+ */
+footer{
+ 	margin:0 auto;
+ }
+footer p
+{
+	text-align:center;
+}
+
