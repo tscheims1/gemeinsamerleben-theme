@@ -18,6 +18,9 @@
 	      get_template_part('templates/header');
 	    }
 	}
+	else {
+		echo "<div id='login-wrapper'>";
+	}
   ?>
 
   <div class="wrap container" role="document">
@@ -32,7 +35,9 @@
       <?php endif; ?>
     </div><!-- /.content -->
   </div><!-- /.wrap -->
-
+   <?php if(is_page_template('template-custom.php'))
+   echo "</div>";
+   ?>
   <?php get_template_part('templates/footer'); ?>
 
 </body>
