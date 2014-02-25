@@ -67,7 +67,8 @@ footer p
  /*login form
   * 
   */
-.login
+#theme-my-login,
+#theme-my-login1
 {
 	border-radius: 4px;
 	border: 1px solid rgb(192,0,0);
@@ -75,20 +76,24 @@ footer p
 	margin-bottom:30px;
 	
 }
-.login p
+#theme-my-login p,
+#theme-my-login1 p
 {
 	display:block;
 	margin: 0 auto;
 }
-.login .tml-action-links
+#theme-my-login .tml-action-links,
+#theme-my-login1 .tml-action-links
 {
 	padding-left:0px;
 }
-.login .tml-action-links li
+.tml-action-links li
+
 {
 	list-style-type: none;
 }
-.login .submit input
+#theme-my-login .submit input,
+#theme-my-login1 .submit input
 {
 	border:none;
 	background-color:rgba(255, 160, 21, 0.5);

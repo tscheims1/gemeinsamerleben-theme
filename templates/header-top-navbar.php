@@ -11,9 +11,16 @@
     </div>
 
     <nav class="collapse navbar-collapse" role="navigation">
-      <?php
+      <?php 
         if (has_nav_menu('primary_navigation')) :
-          wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav'));
+		
+		  if(current_user_can('ungeladen')){
+		     if(has_nav_menu('secondary_navigation')){
+		  	 	wp_nav_menu(array('theme_location' => 'secondary_navigation', 'menu_class' => 'nav navbar-nav'));
+			 }
+			 }
+		  else
+         	 wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav'));
         endif;
       ?>
     </nav>
