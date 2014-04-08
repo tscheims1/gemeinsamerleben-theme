@@ -132,3 +132,10 @@ footer p
 {
 	text-align:left; !important;
 }
+legend
+{
+	border-bottom:1px solid rgb(192,0,0) !important;
+}
+#rememberme{
+	display:none;
+}
